@@ -1,0 +1,214 @@
+/* Start Variables */
+:root{
+    --main-color: #10cab7;
+    --secondary-color: #2c4755;
+}
+/* End Variables */
+
+/* Start Global Ruls */
+html{scroll-behavior: smooth;}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{font-family: 'Barlow Semi Condensed', sans-serif;}
+}
+/* End Global Ruls */
+
+
+.up{
+}
+.flex{
+    width: 1700px;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: auto ;
+    gap: 40px;
+    grid-template-areas: " daniel daniel daniel daniel daniel daniel daniel daniel jon jon jon jon  kira kira  kira kira" "jeanette  jeanette jeanette jeanette patrick patrick patrick patrick patrick patrick patrick patrick kira kira kira kira";
+}
+@media (max-width:375px){
+    .flex{
+        display: block;
+        width: 495px;
+        margin: 5px auto;
+    }
+}
+/********************* Start Daniel  ********************/
+.daniel{
+    grid-area: daniel;
+    background-color: hsl(263, 55%, 52%);
+    color: hsl(0, 0%, 100%);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: -3px 4px 20px -5px black;
+}
+@media (max-width:375px){
+    .daniel{
+        margin-bottom: 40px;
+        border-radius: 10px;
+    }
+}
+.daniel .head{
+    display: flex;
+    align-items: center;
+}
+.daniel .head img{
+    border-radius: 50%;
+    border: 1px solid blue;
+}
+.daniel .head .h{margin-left: 5%;}
+.daniel .head .h p{color: hsl(0, 0%, 81%);margin-top: -20px;}
+
+.daniel p{color: hsl(0, 0%, 81%);line-height: 1.6;letter-spacing: 0.5px;}
+/*********************** End Daniel  ********************/
+
+
+
+
+
+
+
+/********************* Start jon  ********************/
+.jon{
+    grid-area: jon;
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: -3px 4px 20px -5px black;
+}
+@media (max-width:375px){
+    .jon{
+        margin-bottom: 40px;
+        border-radius: 10px;
+    }
+}
+.jon .head{
+    display: flex;
+    align-items: center;
+}
+.jon .head img{
+    border-radius: 50%;
+    border: 1px solid blue;
+}
+.jon .head .h{margin-left: 5%;}
+
+.jon .head .h p{color: hsl(0, 0%, 81%);margin-top: -20px;}
+
+.jon p{color: hsl(0, 0%, 81%);line-height: 1.6;letter-spacing: 0.5px;}
+/*********************** End jon  ********************/
+
+
+
+
+
+/********************* Start jeanette  ********************/
+.jeanette{
+    grid-area: jeanette;
+    background-color: hsl(0, 0%, 100%);
+    color: black;
+    padding: 40px;
+    order: 4;
+    border-radius: 10px;
+    box-shadow: -3px 4px 20px -5px black;
+}
+@media (max-width:375px){
+    .jeanette{
+        margin-bottom: 40px;
+        border-radius: 10px;
+    }
+}
+.jeanette .head{
+    display: flex;
+    align-items: center;
+}
+.jeanette .head img{
+    border-radius: 50%;
+    border: 2px solid hsl(217, 19%, 35%);
+}
+
+.jeanette .head .h{margin-left: 7%;}
+.jeanette .head .h h3{color: hsl(217, 19%, 35%);}
+.jeanette .head .h p{color: hsl(217, 19%, 35%);margin-top: -20px;}
+
+.jeanette h1{color: hsl(217, 19%, 35%);}
+
+
+.jeanette p{color:hsl(217, 19%, 35%);line-height: 1.6;letter-spacing: 0.5px;}
+/*********************** End jeanette  ********************/
+
+
+
+
+/********************* Start Patrick  ********************/
+
+.patrick{
+    grid-area: patrick;
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+    padding: 40px;
+    order: 5;
+    border-radius: 10px;
+    box-shadow: -3px 4px 20px -5px black;
+}
+@media (max-width:375px){
+    .patrick{
+        margin-bottom: 40px;
+        border-radius: 10px;
+    }
+}
+.patrick .head{
+    display: flex;
+    align-items: center;
+}
+.patrick .head img{
+    border-radius: 50%;
+    border: 2px solid hsl(263, 55%, 52%);
+}
+.patrick .head .h{margin-left: 5%;}
+
+.patrick .head .h p{color:  hsl(0, 0%, 81%);margin-top: -20px;}
+
+.patrick p{color:  hsl(0, 0%, 81%);line-height: 1.6;letter-spacing: 0.5px;}
+/*********************** End Patrick  ********************/
+
+
+
+
+
+
+/********************* Start Kira  ********************/
+.kira{
+    grid-area: kira;
+    background-color: hsl(0, 0%, 100%);
+    color: black;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: -3px 4px 20px -5px black;
+}
+@media (max-width:375px){
+    .kira{
+        border-radius: 10px;
+    }
+}
+.kira .head{
+    display: flex;
+    align-items: center;
+}
+.kira .head img{
+    border-radius: 50%;
+    border: 2px solid hsl(217, 19%, 35%);
+}
+.kira .head .h{margin-left: 10%;}
+.kira .head .h h3{color: hsl(217, 19%, 35%)}
+.kira .head .h p{color: hsl(217, 19%, 35%);margin-top: -20px;}
+
+.kira h1{color: hsl(217, 19%, 35%)}
+
+.kira p{color: hsl(217, 19%, 35%);line-height: 1.6;letter-spacing: 0.5px;}
+
+/*********************** End Kira  ********************/
+
+.attribution{font-size: 30px;}
